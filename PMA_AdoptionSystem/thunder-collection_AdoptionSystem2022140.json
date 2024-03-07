@@ -1,0 +1,301 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "AdoptionSystem2022140",
+    "dateExported": "2024-03-07T19:26:08.245Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "2a458ce0-f922-4103-8c10-663df7254b93",
+            "name": "ADMIN",
+            "containerId": "",
+            "created": "2024-02-26T21:43:57.967Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "1ec96d2e-3200-42a8-b0e2-0009124ef8a6",
+            "name": "CLIENT",
+            "containerId": "",
+            "created": "2024-02-26T21:43:57.968Z",
+            "sortNum": 70000
+        },
+        {
+            "_id": "07a2dcea-779f-4479-95a9-6e8cd395bc8a",
+            "name": "Post",
+            "containerId": "",
+            "created": "2024-02-26T21:44:35.316Z",
+            "sortNum": 80000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "675af4e5-91d0-4375-abd4-4bc7e267184a",
+            "colId": "9500faba-e999-4f56-a9a2-8d1b942e1f02",
+            "containerId": "2a458ce0-f922-4103-8c10-663df7254b93",
+            "name": "TestAppointment",
+            "url": "/appointment/test",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-02-26T21:43:57.968Z",
+            "modified": "2024-02-26T21:43:57.968Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "388ef779-16d8-47d3-acd6-2ebf734013fe",
+            "colId": "9500faba-e999-4f56-a9a2-8d1b942e1f02",
+            "containerId": "2a458ce0-f922-4103-8c10-663df7254b93",
+            "name": "SaveAppointment",
+            "url": "/appointment/save",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-26T21:43:57.969Z",
+            "modified": "2024-02-28T00:55:59.311Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlODQ2MTdjMjEzMGExYzJmYTE1ZTkiLCJ1c2VybmFtZSI6InBlZHJpdG8iLCJuYW1lIjoiUGVkcm8iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzA5MDgxNzQ4LCJleHAiOjE3MDkwOTI1NDh9.vxaViyAb9fq9tLn75v5doO7cJqQDh3Q4dHa2-EmxF1k"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "date",
+                        "value": "02/26/2024"
+                    },
+                    {
+                        "name": "status",
+                        "value": "CREATED"
+                    },
+                    {
+                        "name": "animal",
+                        "value": "65dd083c4112d58cc1c9648e"
+                    },
+                    {
+                        "name": "user",
+                        "value": "65dd06af4112d58cc1c96473"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "4930b4b8-c793-48ae-a05d-17fcdeac922c",
+            "colId": "9500faba-e999-4f56-a9a2-8d1b942e1f02",
+            "containerId": "07a2dcea-779f-4479-95a9-6e8cd395bc8a",
+            "name": "Regist a User",
+            "url": "/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-26T21:44:47.842Z",
+            "modified": "2024-03-07T19:20:50.343Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Pedro"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Lopez"
+                    },
+                    {
+                        "name": "username",
+                        "value": "Pedrin"
+                    },
+                    {
+                        "name": "password",
+                        "value": "guate"
+                    },
+                    {
+                        "name": "email",
+                        "value": "pedrito@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "54789856"
+                    },
+                    {
+                        "name": "role",
+                        "value": "ADMIN"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "ee7db4f5-5a25-47bd-ac54-2ac9ae260352",
+            "colId": "9500faba-e999-4f56-a9a2-8d1b942e1f02",
+            "containerId": "07a2dcea-779f-4479-95a9-6e8cd395bc8a",
+            "name": "Login",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-26T21:46:48.332Z",
+            "modified": "2024-03-07T19:21:10.588Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "pedrin"
+                    },
+                    {
+                        "name": "password",
+                        "value": "guate"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "ff8de244-79a3-4627-b226-c10c0cf7f4fd",
+            "colId": "9500faba-e999-4f56-a9a2-8d1b942e1f02",
+            "containerId": "07a2dcea-779f-4479-95a9-6e8cd395bc8a",
+            "name": "Add a animal",
+            "url": "/animal/save",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-02-26T21:48:37.450Z",
+            "modified": "2024-03-07T19:13:07.644Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Domi"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Perro hombre"
+                    },
+                    {
+                        "name": "age",
+                        "value": "5 "
+                    },
+                    {
+                        "name": "type",
+                        "value": "Hoskie"
+                    },
+                    {
+                        "name": "keeper",
+                        "value": "65ea11a50c6cc5fce4316f9d"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "96e9eb78-4ec4-4c27-96cc-ce2eaba659f1",
+            "colId": "9500faba-e999-4f56-a9a2-8d1b942e1f02",
+            "containerId": "1ec96d2e-3200-42a8-b0e2-0009124ef8a6",
+            "name": "search",
+            "url": "/animal/search",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-04T04:05:00.234Z",
+            "modified": "2024-03-07T19:24:51.335Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Doki"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "cc3b5c52-38eb-429d-bee2-d692c0ac8586",
+            "colId": "9500faba-e999-4f56-a9a2-8d1b942e1f02",
+            "containerId": "2a458ce0-f922-4103-8c10-663df7254b93",
+            "name": "Delete Animal",
+            "url": "/animal/deleteAnimal/65ea11c30c6cc5fce4316fa0",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-03-07T19:08:46.584Z",
+            "modified": "2024-03-07T19:21:17.369Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVhMTM5MmIzNGY0N2E0OTEwYzc4MjciLCJ1c2VybmFtZSI6InBlZHJpbiIsIm5hbWUiOiJQZWRybyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTgzOTI3MCwiZXhwIjoxNzA5ODUwMDcwfQ.WBnXM5EHsIKTx6WroeCxT8FLES3n7PYrBKeILAqGwKQ"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "531a0a93-90da-4868-956a-4c4c8491c61b",
+            "colId": "9500faba-e999-4f56-a9a2-8d1b942e1f02",
+            "containerId": "2a458ce0-f922-4103-8c10-663df7254b93",
+            "name": "Update a Animal",
+            "url": "/animal//updateAnimal/65ea140276a187994fe09539",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-03-07T19:17:55.449Z",
+            "modified": "2024-03-07T19:23:41.012Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVhMTM5MmIzNGY0N2E0OTEwYzc4MjciLCJ1c2VybmFtZSI6InBlZHJpbiIsIm5hbWUiOiJQZWRybyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTgzOTI3MCwiZXhwIjoxNzA5ODUwMDcwfQ.WBnXM5EHsIKTx6WroeCxT8FLES3n7PYrBKeILAqGwKQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Doki"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Perro hombre"
+                    },
+                    {
+                        "name": "age",
+                        "value": "6"
+                    },
+                    {
+                        "name": "type",
+                        "value": "Hoskie"
+                    },
+                    {
+                        "name": "keeper",
+                        "value": "",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656"
+        }
+    }
+}
